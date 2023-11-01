@@ -19,7 +19,7 @@ Użytkowanie:
 Porady:
 1. Nie czyszczenie tablic może prowadzić do blędnych wyników. Polecam je dodać
 2. Polecam zmienić w swoim programie rozmiar tablic na odpowiednio mniejszy. Potrafi to mocno przyśpieszyć testowanie ( szczególnie jeśli czyścisz całą tablicę)
-
+3. Możesz też dodać własną weryfikatorkę wyjścia. 
 
 Testuj.cpp jest wypełnione przykładowym rozwiązaniem.
 
