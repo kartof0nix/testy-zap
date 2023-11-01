@@ -27,7 +27,6 @@ int solve(pair<int, vector<pair<int, int>>> wej){
 }
 
 // --------- GENERATORKA ---------
-#include <ctime>  
 #include <iostream> 
 #include <random> 
   
@@ -41,13 +40,11 @@ int r(int a, int b){
 
 pair<int, vector<pair<int, int>>> gen(int seed){ 
     mt.seed(seed);
-
     int n = r(2, MN);
     vector<pair<int, int>> res;
     for(int i = 1; i <= n; i++){
         int a = r(1, MAXT-1);
         int b = r(a+1, MAXT);
-        // cout << a << ' ' << b << '\n';
         res.push_back({a, b});
     }
     return {n, res};
@@ -56,7 +53,6 @@ pair<int, vector<pair<int, int>>> gen(int seed){
 // -------- TESTERKA ----------
 
 void print_test(pair<int, vector<pair<int, int>>> t){
-    // cout <
     cout << t.first << '\n';
     for(auto i : t.second){
         cout << i.first << ' ' << i.second << '\n';
@@ -84,11 +80,10 @@ int main(){
 			cout << "Wejscie:\n";
             print_test(in);
 			cout << "Wyjscie:\n" << cur_res << '\n' << "Odpowiedź:\n" << ans << '\n';
-            
             break;
         }
 
-        if(i%1000 == 0){
+        if(i%INTERVAL == 0){
             cout << "TESTY do " << i << " OK\n";
         }
     }
