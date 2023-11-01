@@ -23,7 +23,7 @@ Porady:
 
 Testuj.cpp jest wypełnione przykładowym rozwiązaniem.
 
-FAQ:
+# FAQ:
 > Mam runtime error. Jak wypisać test? 
 
 Zmień w testerce początek pętli na ostatni test który wypisał że przeszedł(np. int i = 31000). Odkomentuj wypisywanie testu przed wykonaniem go.
