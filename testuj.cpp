@@ -2,7 +2,6 @@
 using namespace std;
 // --- USTAWIENIA ---
 
-constexpr int I;
 string path = "./zap1.out";
 // Odkomentuj sekcję dla odpowiedniego pliku
 // -> zap1.out
