@@ -17,8 +17,8 @@ Użytkowanie:
 4. Skompiluj i wykonaj testuj.cpp.
 
 Porady:
-1. Nie czyszczenie tablic może prowadzić do blędnych wyników. Polecam je dodać
-2. Polecam zmienić w swoim programie rozmiar tablic na odpowiednio mniejszy. Potrafi to mocno przyśpieszyć testowanie ( szczególnie jeśli czyścisz całą tablicę)
+1. Polecam czyścić tablice i zmienne. Nie czyszczenie może prowadzić do złych wyników(prawdopodobnie na teście 2)
+2. Polecam zmienić rozmiar swoich tablic na odpowiednio mniejszy dla paczki. Potrafi to mocno przyśpieszyć testowanie ( szczególnie jeśli czyścisz tablice )
 3. Możesz też dodać własną weryfikatorkę wyjścia. 
 
 Testuj.cpp jest wypełnione przykładowym rozwiązaniem.
