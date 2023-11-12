@@ -32,3 +32,10 @@ Zmień w testerce początek pętli na ostatni test który wypisał że przeszed�
 
 Jeśli nie działa testerka lub generatorka, zgłoś to przed github zakładkę 'Issues'. Jeśli uważasz że dla danego testu wygenerowałem złą odpowiedź, napisz o tym na forum. Uwaga: jeśli pierwszy test jest ŹLE, to prawdopodobnie wina generatorki, więc zgłoś to przez github.
 
+> Testerka dziwnie się zachowuje ( np. w oczywisty sposób wypisuje błędne wyniki)
+
+Może być to skutek wychodzenia poza pamięć twojego programu, a co za tym idzie nadpisywania pamięci (np. testerki).
+Rozwiązanie: Kompiluj z --fsanitize=address (opcjonalnie -g dla lepszego outputu fsanitize). Zapobieże to wychodzeniu poza pamięć.
+
+> Pomimo że czyszczę pamięć coś i tak się psuje na drugim teśćie
+Możesz umieścić swój kod w osobnym strucie ( poza #flagami kompilacji i constexpr ). Nie zagwarantuje to że tablice i zmienne będą czyszczone ( podobnie jakbyś je definiował w funkcjach) ale przynajmniej struktury takie jak wektory i mapy będą puste.
