@@ -1,7 +1,11 @@
-# testy-zap
-Testerka do zadania zapobiegliwy student z OI31.
+# Testerka do zadania 'Zapobiegliwy student' z OI31.
 
-# Użytkowanie
+## Opis działania
+
+Testy są podzielone na trzy grupy, przy czym każdy plik `zap$g.out` odpowiada GRUPIE `$g`. W każdej grupie, wejście do testu `$i` jest generowane funkcją `gen($i)`. Wyjście do testu to `$i-ta` linijka pliku `zap$g.out`.
+Gwarantowane jest, że niezależnie od środowiska, `gen($i)` zwróci to samo wejście dla tego samego `$i` i `$g`. 
+
+## Użytkowanie
 W folderze znajdziesz 4 pliki:
 * testuj.cpp : Generatorka i testerka.
 * zap1.out : 10^7 odpowiedzi dla n<=16 a,b<=32
@@ -23,7 +27,7 @@ Porady:
 
 Testuj.cpp jest wypełnione przykładowym rozwiązaniem.
 
-# FAQ:
+## FAQ:
 > Mam runtime error. Jak wypisać test? 
 
 Zmień w testerce początek pętli na ostatni test który wypisał że przeszedł(np. int i = 31000). Odkomentuj wypisywanie testu przed wykonaniem go.
